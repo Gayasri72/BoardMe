@@ -119,7 +119,7 @@ const Mainheader: React.FC = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="text-2xl font-medium text-blue-500 m-8">Travely</h1>
+        <h1 className="text-2xl font-medium text-blue-500 m-8">BoardMe</h1>
         <ul className="p-4 mt-20">
           <li className="p-4 border-b border-gray-600">
             <Link to="/">Home</Link>
