@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  Navigate,
   
 
 } from "react-router-dom";
@@ -13,7 +14,9 @@ export const App = () => {
   return (
   <Router>
     <Routes>
-      <Route path="/" element={<Layout></Layout>}/>
+      <Route path="/" element={<Layout>
+        <p>home page</p>
+      </Layout>}/>
     </Routes>
   </Router>
   )
