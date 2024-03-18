@@ -8,6 +8,13 @@ export default {
         'btn-blue':'#1E36B0',
         'btn-black':'#41a3ff'
       },
+      container:{
+        padding: {
+          md: "10rem",
+        },
+
+      },
+     
     },
   },
   plugins: [],
