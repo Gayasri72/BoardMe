@@ -4,12 +4,14 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import userRoutes from "./routes/users";
 import authRoutes from "./routes/auth";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string);
 
 const app = express();
+app.use(cookieParser());
 
 // Use CORS middleware with specific origin and credentials
 app.use(

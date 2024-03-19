@@ -4,6 +4,7 @@ import {
   FaInstagramSquare,
   FaTwitterSquare,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,8 +35,16 @@ const Footer = () => {
         <div className="ml-[8rem]">
           <h6 className="font-bold text-[#41A4FF]">Support</h6>
           <ul className="mt-2 font-light">
-            <li className="py-2 text-sm">Contact us</li>
-            <li className="py-2 text-sm">About us</li>
+            <li className="py-2 text-sm">
+              <Link to='/contactus'>
+                Contact us
+              </Link>
+            </li>
+            <li className="py-2 text-sm">
+              <Link to='/aboutus'>
+                About us
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
