@@ -88,7 +88,7 @@ const Mainheader: React.FC = () => {
             </Menu.Items>
           </Transition>
         </Menu>
-        <Link to="/contactus">Listings</Link>
+        <Link to="/listing">Listings</Link>
       </div>
       {/* <!-- right header section --> */}
       <div className="items-center space-x-3 hidden md:flex">
@@ -170,7 +170,7 @@ const Mainheader: React.FC = () => {
             </Menu>
           </li>
           <li className="p-4 border-b border-gray-600">
-            <Link to="/contactus">Listings</Link>
+            <Link to="/listing">Listings</Link>
           </li>
           <li className="p-4 mt-8">
             <Link

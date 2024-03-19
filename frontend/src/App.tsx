@@ -6,6 +6,12 @@ import {
 } from "react-router-dom";
 import { Layout } from "./layouts/Layout";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Packages from "./pages/Packages";
+import Services from "./pages/Services";
+import Spaces from "./pages/Spaces";
+import Events from "./pages/Events";
+import Home from "./pages/Home";
 
 export const App = () => {
   return (
@@ -15,7 +21,7 @@ export const App = () => {
           path="/"
           element={
             <Layout>
-              <p>home page</p>
+              <Home/>
             </Layout>
           }
         />
@@ -27,6 +33,47 @@ export const App = () => {
             </Layout>
           }
         />
+         <Route
+          path="/login"
+          element={
+            <Layout>
+              <Login />
+            </Layout>
+          }
+        />
+        <Route
+          path="/events"
+          element={
+            <Layout>
+              <Events />
+            </Layout>
+          }
+        />
+        <Route
+          path="/spaces"
+          element={
+            <Layout>
+              <Spaces />
+            </Layout>
+          }
+        />
+        <Route
+          path="/services"
+          element={
+            <Layout>
+              <Services />
+            </Layout>
+          }
+        />
+        <Route
+          path="/listing"
+          element={
+            <Layout>
+              <Packages />
+            </Layout>
+          }
+        />
+
       </Routes>
     </Router>
   );
