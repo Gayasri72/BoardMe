@@ -32,5 +32,5 @@ const Auth0ProviderWithNavigate = ({children}: props) => {
 
 }
 
-export default Auth0ProviderWithNavigate
+//export default Auth0ProviderWithNavigate
 
