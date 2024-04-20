@@ -6,6 +6,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useAppContext } from "../../contexts/AppContext";
 import SignOutButton from "../SignOutButton";
+//import UsernameMenu from "./UsernameMenu";
 
 interface NavItem {
   path: string;
@@ -97,6 +98,7 @@ const NavigatedHeader: React.FC = () => {
           {/* <!-- right header section --> */}
           <div className="items-center space-x-3 hidden md:flex">
             <SignOutButton />
+            {/* <UsernameMenu/> */}
           </div>
           <div onClick={handleNav} className="block md:hidden">
             {nav ? (
@@ -167,6 +169,7 @@ const NavigatedHeader: React.FC = () => {
               </li>
               <li className="p-4 mt-8">
                 <SignOutButton />
+                {/* <UsernameMenu/> */}
               </li>
             </ul>
           </div>
